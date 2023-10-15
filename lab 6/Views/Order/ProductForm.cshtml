@@ -1,0 +1,16 @@
+﻿@model PizzaOrder.Models.User
+
+<form asp-action="ProductForm" method="post">
+    @for (int i = 0; i < Model.Age; i++)
+    {
+        <label>Product @i + 1:</label>
+        <input asp-for="products[i].Name" placeholder="Product Name" required />
+
+        <br />
+        <label>Quantity:</label>
+        <input asp-for="products[i].Quantity" type="number" required />
+
+        <br />
+    }
+    <button type="submit">Submit</button>
+</form>

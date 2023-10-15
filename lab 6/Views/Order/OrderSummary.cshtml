@@ -1,0 +1,10 @@
+﻿@model List<PizzaOrder.Models.Product>
+
+<h2>Order Summary</h2>
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>@product.Name - Quantity: @product.Quantity</li>
+    }
+</ul>
+

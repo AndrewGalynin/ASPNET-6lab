@@ -1,0 +1,10 @@
+﻿@model PizzaOrder.Models.User
+
+<form asp-action="Index" method="post">
+    <label>Name:</label>
+    <input asp-for="Name" required /><br />
+    <label>Age:</label>
+    <input asp-for="Age" type="number" required /><br />
+    <button type="submit">Submit</button>
+</form>
+
